@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portal Personal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="brand" href="#inicio">
+            <span>Perfil de Portafolio</span>
+        </a>
+
+        <button id="menu-toggle" type="button" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav class="hidden" id="nav">
+
+            <ul id="menu">
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi">Sobre mí</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-inner">
+
+            <div class="profile-photo-wrap">
+
+                <img
+                    id="profile-photo"
+                    src="perfil.png"
+                    alt="Foto de perfil"
+                >
+
+            </div>
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    Hola, soy
+                </span>
+
+                <h1 id="profile-name">
+                    Kelvin Francisco Izaguirre Izaguirre
+                </h1>
+
+                <p class="tagline" id="profile-tagline">
+                    Ingeniero en Ciencias de la Computación
+                </p>
+
+                <a class="btn" href="#contacto">
+                    Contáctame
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section" id="sobre-mi">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                Conóceme
+            </span>
+
+            <h2>
+                Sobre mí
+            </h2>
+
+            <div class="bio" id="bio">
+
+                <p>
+                    Mi nombre es Kelvin Francisco Izaguirre, tengo 20 años de edad.
+                    Me gusta mucho jugar fútbol y también soy un apasionado por todas
+                    las películas y series de Marvel. Puedo decir que amo todo eso;
+                    podría pasar todo un día repitiendo películas de Marvel.
+                </p>
+
+                <p>
+                    Soy estudiante de la carrera de Ingeniería en Ciencias de la
+                    Computación. Al principio, esta carrera no era tanto de mi agrado,
+                    pero con el paso del tiempo le he ido tomando mucho cariño.
+                    Ahora puedo decir que esto es lo que realmente me apasiona y,
+                    siendo sincero, me veo en un futuro trabajando en este campo.
+                </p>
+
+                <p>
+                    Me gusta mucho la parte del desarrollo de software y siento que
+                    uno de mis puntos fuertes es la programación en C#.
+                </p>
+
+            </div>
+
+            <p class="bio-hint">
+                Contáctame si necesitas ayuda en algo de programación.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section section-alt" id="contacto">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                Hablemos
+            </span>
+
+            <h2>
+                Contacto
+            </h2>
+
+            <div class="contact-layout">
+
+                <article class="form-card">
+
+                    <h3>
+                        Envíame un mensaje
+                    </h3>
+
+                    <p>
+                        Completa el formulario y se abrirá WhatsApp
+                        con tu mensaje listo para enviar.
+                    </p>
+
+                    <form id="form-contacto" novalidate>
+
+                        <div class="form-hp" aria-hidden="true">
+
+                            <label for="empresa">
+                                Empresa
+                            </label>
+
+                            <input
+                                type="text"
+                                id="empresa"
+                                name="empresa"
+                                tabindex="-1"
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+                        <div class="form-field full">
+
+                            <label for="con-nombre">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="con-nombre"
+                                name="nombre"
+                                placeholder="Ej. Carlos Martínez"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-field full">
+
+                            <label for="con-contacto">
+                                Teléfono o correo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="con-contacto"
+                                name="contacto"
+                                placeholder="9999-9999 o correo@ejemplo.com"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-field full">
+
+                            <label for="con-mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="con-mensaje"
+                                name="mensaje"
+                                placeholder="Cuéntame en qué puedo ayudarte"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <div
+                            class="form-submit-msg"
+                            id="con-resultado"
+                        ></div>
+
+                        <div class="form-actions">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit"
+                            >
+                                Enviar mensaje
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </article>
+
+
+                <aside class="info-stack">
+
+                    <div class="info-card">
+
+                        <span class="eyebrow">
+                            Directo
+                        </span>
+
+                        <h3>
+                            Teléfono / WhatsApp
+                        </h3>
+
+                        <p id="info-telefono">
+                            9648-3853
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="eyebrow">
+                            Correo
+                        </span>
+
+                        <h3>
+                            Escríbeme
+                        </h3>
+
+                        <p id="info-correo">
+                            kelvinizaguirre914@gmail.com
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="eyebrow">
+                            Ubicación
+                        </span>
+
+                        <h3>
+                            ¿Dónde estoy?
+                        </h3>
+
+                        <p id="info-ubicacion">
+                            Tegucigalpa, Francisco Morazán, Honduras
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
